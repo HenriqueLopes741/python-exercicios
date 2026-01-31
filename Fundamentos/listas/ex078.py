@@ -1,7 +1,7 @@
 val = []
 
 for v in range(0, 5):
-    numero = int(input(f'Digite um valor para a Posição {v}: '))
+    numero = int(input(f'Digite um valor para a Posição {v}:  '))
     val.append(numero)
 
 print(f'Voce digitou os valores {val}')
