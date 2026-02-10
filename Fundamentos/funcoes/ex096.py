@@ -1,10 +1,12 @@
-def conta(a, b):
-    s = a + b
-    print(s)
+def area(a, comp):
+    tot = a * b
+    print(f'A area de um terro {a} x {b} é de total {tot}m².')
 
-conta(2, 5)
 
-while True:
-    c = int(input(''))
-    d = int(input(''))
-    conta(c, d)
+print('Controle de Terrenos')
+print('-' * 20)
+
+a = float(input('Largura (m) : '))
+b = float(input('Comprimento (m) : '))
+
+area(a, b)
