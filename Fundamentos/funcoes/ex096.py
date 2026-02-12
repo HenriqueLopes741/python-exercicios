@@ -6,7 +6,7 @@ def area(a, comp):
 print('Controle de Terrenos')
 print('-' * 20)
 
-a = float(input('Largura (m) : '))
+a = float(input('Largura dsasdaasd(m) : '))
 b = float(input('Comprimento AAAA(m) : '))
 
 area(a, b)
