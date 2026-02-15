@@ -12,7 +12,7 @@ def somarPar(lista):
     for valor in lista:
         if valor % 2 == 0:
             soma += valor
-    print(f'Somando os valores pares de {lista}, temos  somassss {soma}')
+    print(f'Somando os valores pares de {lista}, temos  somasssss {soma}')
 
 
 
