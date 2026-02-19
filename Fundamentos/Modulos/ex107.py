@@ -1,4 +1,4 @@
-from funções import aumentar, metade, dobro
+from Fundamentos.Modulos.funções import aumentar, metade, dobro
 a = int(input("Digite o preço: R$"))
 print('-=' * 20)
 print(f'A metade de R${a} é R${metade(a)}')
