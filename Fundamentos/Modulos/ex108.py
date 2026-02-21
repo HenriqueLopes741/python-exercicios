@@ -6,4 +6,4 @@ def formatar(txt):
     elif (len(text) - 1) - pos_virg == 1:
         text += "0"
     texto = text.replace(".", ",")
-    return f"R${texto}"
+    return f"O dinheiro que voce tem R${texto}"
