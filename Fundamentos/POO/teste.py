@@ -1,28 +1,36 @@
-#declaração da classe
-class Henrique:
-    def __init__(self): #MEtodo Construtor
-        #Atributos
-        self.nome = ""
-        self.idade = 0
+class ContaBancaria:
+    def __init__(self, titular, saldo_inicial=0):
+        self.titular = titular      # atributo
+        self.saldo = saldo_inicial  # atributo
 
-    #Metodos de Instancia
-    def aniversario(self):
-        self.idade = self.idade + 1
+    def depositar(self, valor):
+        if valor > 0:
+            self.saldo += valor
+            print(f"Depósito de R${valor} realizado com sucesso.")
+        else:
+            print("Valor inválido.")
 
-    def mensagem(self):
-        return f"{self.nome} é Louco e tem {self.idade} anos de idade."
+    def sacar(self, valor):
+        if valor <= self.saldo:
+            self.saldo -= valor
+            print(f"Saque de R${valor} realizado com sucesso.")
+        else:
+            print("Saldo insuficiente.")
+
+    def mostrar_saldo(self):
+        print(f"Titular: {self.titular}")
+        print(f"Saldo atual: R${self.saldo}")
 
 
-#declaração dos objetos
+    
+conta1 = ContaBancaria("Henrique", 100)
+conta2 = ContaBancaria("Maria", 50)
 
-h1 = Henrique()
-h1.nome = "Maria"
-h1.idade = 17
-h1.aniversario()
-print(h1.mensagem())
+conta1.depositar(50)
+conta1.sacar(30)
+conta1.mostrar_saldo()
 
-h2 = Henrique()
-h2.nome = "Henrique"
-h2.idade = 18
-h2.aniversario()
-print(h2.mensagem())
+print("-----")
+
+conta2.sacar(100)
+conta2.mostrar_saldo()
