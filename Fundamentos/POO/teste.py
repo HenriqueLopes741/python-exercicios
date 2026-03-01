@@ -24,7 +24,7 @@ class ContaBancaria:
 
     
 conta1 = ContaBancaria("Henrique", 100)
-conta2 = ContaBancaria("Maria", 50)
+conta2 = ContaBancaria("Mariaaa", 50)
 
 conta1.depositar(50)
 conta1.sacar(30)
