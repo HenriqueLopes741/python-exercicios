@@ -32,5 +32,5 @@ c3.destampar()
 c1.escrever("Olá, tudo bem?")
 c1.quebrar_linha(3)
 
-c2.escrever("Como você vai?")
+c2.escrever("Como você vai???")
 c2.quebrar_linha(3)
